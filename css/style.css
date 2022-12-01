@@ -158,6 +158,32 @@ section .logo {
 
 }
 
+/*SKILLS*/
+#skills {
+    background: #fff;
+}
+
+#skills .heading h2 {
+    color: #00b5cc;
+    text-transform: uppercase;
+
+}
+
+#skills .progress {
+    height: 100%;
+    margin: 30px 20px;
+    background: #ddd;
+
+}
+
+#skills .progress-bar {
+    background: #00b5cc;
+
+}
+
+#skills .progress h5 {
+    text-shadow: 1px 1px 1px #000;
+}
 
 
 
