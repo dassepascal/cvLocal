@@ -1,33 +1,91 @@
-body
-{
-    font-family: 'Lato', sans-serif;
-    margin: 70px 0px;
-    background: #0069d6;
+/* GENERAL*/
+
+@font-face {
+    font-family: "Lato";
+    src: url('../police/Lato-Regular.ttf');
 }
-.divider
-{
-    width:100px;
+
+@font-face {
+    font-family: "Lato";
+    font-style: italic;
+    src: url('../police/Lato-Italic.ttf');
+}
+
+@font-face {
+    font-family: "Lato";
+    font-weight: bold;
+    src: url('../police/Lato-Bold.ttf');
+
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+.button1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+}
+
+.button1:hover {
+    background: white;
+    color: #00b5cc;
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 45px 0 80px 0;
+}
+
+section .heading {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+section .heading h2 {
+    text-transform: uppercase;
+}
+
+.blue-divider {
+    width: 100px;
     height: 2px;
-    background: #ffa500;
+    background: #00b5cc;
+    margin: 10px auto;
+}
+
+.white-divider {
+    width: 100px;
+    height: 2px;
+    background: #fff;
     margin: 0 auto;
 }
-.heading 
-{
-    text-align: center;
-    margin-bottom: 60px;        
-}
-h2
-{
-    text-transform: uppercase;
-    font-weight:bold;
-    color: #fff;
-}
-#contact-form
-{
-    font-size: 20px;
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
+
+ul,
+ol {
+    list-style: none;
 }
 /*---  NEW  ------*/
 .blue
@@ -58,64 +116,85 @@ h2
     font-weight: bold;
     font-size: 22px;
 }
-.button1
-{
-    border: 1px solid #ddd;
-    background: #ffa500;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*contact*/
+#contact {
+    background: #00b5cc;
+}
+
+#contact .heading h2 {
     color: #fff;
-    width: 100%;        
+}
+
+#contact-form {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.form-control {
+    height: 50px;
+    font-size: 18px;
+}
+
+#contact-form input[type=submit] {
+    margin: 40px auto 0px;
+    display: block;
+}
+
+.comments {
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(217, 17, 17);
+    height: 25px;
+    
+}
+
+#contact-form .thank-you {
+    text-align: center;
+    margin-top: 15px;
     font-weight: bold;
-    text-transform: uppercase;
-    padding: 18px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in 0s;
+    font-size: 22px;
 }
-.button1:hover
-{
-    background: #333;
-    border-color: #ffa500;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

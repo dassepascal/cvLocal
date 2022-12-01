@@ -1,24 +1,28 @@
 $(function () {
-    
+   
     $('#contact-form').submit(function(e) {
+        console.log(e);
         e.preventDefault();
         $('.comments').empty();
         var postdata = $('#contact-form').serialize();
-        
+        console.log(postdata)
+
         $.ajax({
             type: 'POST',
             url: 'php/contact.php',
             data: postdata,
             dataType: 'json',
             success: function(json) {
-                 
+                 console.log('test');
                 if(json.isSuccess) 
                 {
+                    console.log('je suis passe');
                     $('#contact-form').append("<p class='thank-you'>Votre message a bien été envoyé. Merci de m'avoir contacté :)</p>");
                     $('#contact-form')[0].reset();
                 }
                 else
                 {
+                    console.log ('je ne passe pas')
                     $('#firstname + .comments').html(json.firstnameError);
                     $('#name + .comments').html(json.nameError);
                     $('#email + .comments').html(json.emailError);
