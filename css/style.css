@@ -132,7 +132,31 @@ ol {
     text-align: center;
 }
 
+/*ABOUT*/
+#about {
+    padding-top: 100px;
+    background: #00b5cc;
+}
 
+section .logo {
+    padding: 20px 0;
+}
+
+.profile-picture {
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+}
+
+#about .heading h1 {
+    color: #fff;
+
+}
+
+#about .heading h3 {
+    color: #fff;
+
+}
 
 
 
